@@ -77,6 +77,12 @@ public class Main {
             System.out.println("Arquivo foi encontrado.");
             Path path = Paths.get(arquivo.getPath());
             conteudo = Files.readString(path);
+            System.out.println("Deseja visualizar algum item do histórico? (s/n)");
+            Scanner leitor = new Scanner(System.in);
+            String resposta = leitor.nextLine();
+            if (resposta.equals("s")) {
+                visualizar visualizar = new visualizar(conteudo);
+            }
             String passar = iniciador(conteudo);
             criar(passar);
         }
