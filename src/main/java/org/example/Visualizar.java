@@ -29,7 +29,7 @@ public class Visualizar {
         if (!existe) {
             System.out.println("Não há registro para a data informada.");
         }
-        String resposta = Console.lertexto("Deseja fazer um registro?");
+//        String resposta = Console.lertexto("Deseja fazer um registro?");
 //        if (!resposta.equals("s")) {
 //            System.exit(0);
 //        }

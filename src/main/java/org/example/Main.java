@@ -11,6 +11,6 @@ public class Main {
     public static void main(String[] args) throws IOException {
         iniciar();
         verificador();
-
+        String data = Console.lertexto("Informe o ");
     }
 }

@@ -35,4 +35,9 @@ public class Console {
     static void sucesso(String mensagem) {
         System.out.println("\u001B[32m" + mensagem + "\u001B[0m");
     }
+
+    static void limpar() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
+    }
 }

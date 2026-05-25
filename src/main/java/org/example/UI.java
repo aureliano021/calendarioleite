@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import static org.example.Criar.criar;
 import static org.example.Inicializador.iniciador;
+import static org.example.SomaFinal.soma;
 import static org.example.Verificador.verificador;
 
 public class UI {
@@ -23,16 +24,20 @@ public class UI {
                         \u001B[0m""");
                 switch (resposta) {
                     case 1:
+                        Console.limpar();
                         String passar = iniciador(existe);
                         criar(passar);
                         break;
                     case 2:
+                        Console.limpar();
                         Visualizar visualizar = new Visualizar(existe);
                         break;
                     case 3:
-                        SomaFinal soma = new SomaFinal();
+                        Console.limpar();
+                        soma();
                         break;
                     case 4:
+                        Console.limpar();
                         continua = false;
                         break;
                 }
