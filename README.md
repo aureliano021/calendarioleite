@@ -61,5 +61,3 @@ Este sistema automatiza esse controle, substituindo o caderno físico por regist
 ## 👨‍💻 Sobre o Projeto
 
 Projeto desenvolvido durante o aprendizado de Java no curso de Engenharia de Software da Uniasselvi. O objetivo principal foi criar uma solução de software para um problema real do dia a dia em uma propriedade rural no interior da Bahia.
-
-```
