@@ -6,12 +6,10 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
-import static org.example.Verificador.verificador;
+import static org.example.LeitorArquivo.verificador;
 
-public class SomaFinal {
+public class GeradorRelatorio {
     public static void soma() throws IOException {
         String conteudo = verificador();
         if (conteudo != null) {

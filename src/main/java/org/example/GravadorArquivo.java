@@ -3,7 +3,7 @@ package org.example;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-public class Criar {
+public class GravadorArquivo {
     static void criar(String conteudo){
         try {
             Path arquivoPath = Path.of("arquivoan.json");

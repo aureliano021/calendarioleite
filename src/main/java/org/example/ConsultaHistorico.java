@@ -5,11 +5,9 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-import java.util.Scanner;
+public class ConsultaHistorico {
 
-public class Visualizar {
-
-    public Visualizar(String conteudo) {
+    public ConsultaHistorico(String conteudo) {
         boolean existe = false;
         String data = Terminal.lertexto("Informe a Data. (DD/MM/AAAA)");
         JsonArray array = JsonParser.parseString(conteudo).getAsJsonArray();
