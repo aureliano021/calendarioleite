@@ -5,12 +5,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Scanner;
 
-import static org.example.Criar.criar;
-import static org.example.Inicializador.iniciador;
-
-public class Verificador {
+public class LeitorArquivo {
     public static String verificador() throws IOException {
         Terminal.aviso("verificando se o arquivo existe.");
         File arquivo = new File("arquivoan.json");

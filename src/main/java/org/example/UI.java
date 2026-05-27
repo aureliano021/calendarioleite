@@ -2,10 +2,10 @@ package org.example;
 
 import java.io.IOException;
 
-import static org.example.Criar.criar;
-import static org.example.Inicializador.iniciador;
-import static org.example.SomaFinal.soma;
-import static org.example.Verificador.verificador;
+import static org.example.GravadorArquivo.criar;
+import static org.example.ColetorDados.iniciador;
+import static org.example.GeradorRelatorio.soma;
+import static org.example.LeitorArquivo.verificador;
 
 public class UI {
     public static void iniciar() throws IOException {
@@ -30,7 +30,7 @@ public class UI {
                         break;
                     case 2:
                         Terminal.limpar();
-                        Visualizar visualizar = new Visualizar(existe);
+                        new ConsultaHistorico(existe);
                         break;
                     case 3:
                         Terminal.limpar();

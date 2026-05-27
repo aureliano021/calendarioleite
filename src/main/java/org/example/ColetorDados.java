@@ -5,7 +5,7 @@ import com.google.gson.*;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-public class Inicializador {
+public class ColetorDados {
     public static String iniciador (String conteudo){
         int leite = Terminal.lerint("informe a quantidade de leite:");
         int data = Terminal.lerint("informe a data:");
@@ -22,7 +22,7 @@ public class Inicializador {
             date = LocalDate.now();
         }
 
-        Gerenciador novo = new Gerenciador(leite, date, fora);
+        RegistroLeite novo = new RegistroLeite(leite, date, fora);
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 

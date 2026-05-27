@@ -2,12 +2,12 @@ package org.example;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class Gerenciador {
+public class RegistroLeite {
     int quantidadeleite;
     String data;
     Boolean fora;
 
-    public Gerenciador(int leite, LocalDate data, boolean fora) {
+    public RegistroLeite(int leite, LocalDate data, boolean fora) {
         this.quantidadeleite = leite;
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         String formattedData = data.format(dtf);

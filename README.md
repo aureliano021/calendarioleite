@@ -1,22 +1,24 @@
-# 🐄 CalendarioLeite
+# 🐄 Controle Leiteiro
 
-Sistema de registro de produção de leite desenvolvido em Java, criado para substituir o controle manual em caderno e facilitar o fechamento mensal com a cooperativa.
+Sistema de registro de produção de leite desenvolvido em Java, criado para substituir o controle manual em caderno e facilitar o fechamento mensal com a empresa compradora.
 
 ## 💡 Contexto
 
-Em propriedades rurais, o leite coletado pelas vacas é enviado diariamente ao carro do leite, que transporta ao resfriador e depois à cooperativa (DaVaca). No final do mês, o produtor precisa bater o total registrado com os dados da cooperativa para receber o pagamento corretamente.
+Em propriedades rurais do interior do Brasil, o leite coletado é enviado diariamente ao transportador, que o leva ao resfriador e, posteriormente, à empresa de laticínios. No final do mês, o produtor precisa confrontar o seu total registrado com os dados da empresa para garantir o pagamento correto. 
 
-Este sistema automatiza esse controle, substituindo o caderno físico por registros digitais estruturados.
+Este sistema automatiza esse controle, substituindo o caderno físico por registros digitais, precisos e estruturados.
 
-## ✅ Funcionalidades atuais
+## ✅ Funcionalidades Atuais
 
-- Registrar diariamente a quantidade de leite produzida
-- Indicar se houve retirada para consumo interno (`fora: true`)
-- Persistência dos dados em arquivo `.json` local
-- Visualizar registro por data específica
-- Validação de data com suporte a datas retroativas
+- **Registro Diário:** Inserção da quantidade de leite produzida no dia.
+- **Controle de Consumo:** Indicação se houve retirada de leite para consumo interno (`fora: true/false`).
+- **Menu Interativo:** Navegação via terminal para adicionar registros, visualizar histórico e emitir relatórios.
+- **Relatórios de Soma:** Cálculo do total de leite produzido, com filtros por mês ou ano.
+- **Consulta Histórica:** Visualização de registros filtrados por uma data específica.
+- **Validação de Data:** Suporte a datas retroativas com formatação automática (`dd/MM/yyyy`).
+- **Persistência de Dados:** Salvamento local automático em arquivo `.json`.
 
-## 🗂️ Estrutura do JSON gerado
+## 🗂️ Estrutura do JSON Gerado
 
 ```json
 [
@@ -33,31 +35,29 @@ Este sistema automatiza esse controle, substituindo o caderno físico por regist
 ]
 ```
 
-## 🚧 Funcionalidades planejadas
+## 🚧 Funcionalidades Planejadas
 
-- [ ] Soma total por mês para fechamento com a cooperativa
-- [ ] Menu interativo no terminal (adicionar, visualizar, resumo mensal)
-- [ ] Validação de entrada de dados (ex: impedir datas futuras)
-- [ ] Detectar registro duplicado para o mesmo dia
+- [ ] Validação rigorosa de entrada de dados (ex: impedir o registro de datas futuras).
+- [ ] Detecção e tratamento de registros duplicados para o mesmo dia.
 
-## 🔮 Futuro do projeto
+## 🔮 Futuro do Projeto
 
-- **API REST** com Spring Boot para servir os dados via HTTP
-- **Aplicativo Android** para registro e consulta pelo celular no campo
+- **API REST** com Spring Boot para disponibilizar os dados via HTTP.
+- **Aplicativo Android** para facilitar o registro e a consulta direto do celular no curral/campo.
 
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
-- Java 26
-- [Gson](https://github.com/google/gson) — serialização/deserialização JSON
-- Maven
+- **Java 26**
+- **[Gson](https://github.com/google/gson):** Para serialização e desserialização de arquivos JSON.
+- **Maven:** Gerenciamento de dependências.
 
-## ▶️ Como executar
+## ▶️ Como Executar
 
-1. Clone o repositório
-2. Abra no IntelliJ IDEA
-3. Execute a classe `Main`
-4. Na primeira execução, o arquivo `arquivo.json` será criado automaticamente
+1. Clone este repositório.
+2. Abra o projeto no IntelliJ IDEA (ou na sua IDE de preferência).
+3. Execute a classe `Main`.
+4. Na primeira execução, o arquivo `arquivoan.json` será criado automaticamente no diretório raiz para armazenar os dados.
 
-## 👨‍💻 Sobre
+## 👨‍💻 Sobre o Projeto
 
-Projeto desenvolvido durante o aprendizado de Java no curso de Engenharia de Software — Uniasselvi. Criado para resolver um problema real do dia a dia em uma propriedade rural no interior da Bahia.
+Projeto desenvolvido durante o aprendizado de Java no curso de Engenharia de Software da Uniasselvi. O objetivo principal foi criar uma solução de software para um problema real do dia a dia em uma propriedade rural no interior da Bahia.

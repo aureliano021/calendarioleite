@@ -3,14 +3,10 @@ package org.example;
 import java.io.IOException;
 
 import static org.example.UI.iniciar;
-import static org.example.Verificador.verificador;
+import static org.example.LeitorArquivo.verificador;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws IOException {
         iniciar();
-        verificador();
-        String data = Terminal.lertexto("Informe o ");
     }
 }
