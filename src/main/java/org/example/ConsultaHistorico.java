@@ -14,7 +14,7 @@ public class ConsultaHistorico {
 
     public ConsultaHistorico(String conteudo) {
         boolean existe = false;
-        String data = Terminal.lertexto("Informe a Data. (AAAA/MM/DD)");
+        String data = Terminal.lertexto("Informe a Data. (AAAA-MM-DD)");
         JsonArray array = JsonParser.parseString(conteudo).getAsJsonArray();
         for (JsonElement element : array) {
             JsonObject obj = element.getAsJsonObject();
@@ -42,7 +42,7 @@ public class ConsultaHistorico {
 //                String dataA = a.getAsJsonObject().get("data").getAsString;
 //                );
 //    }
-private static JsonArray verificarOrdem(JsonArray array) {
+public static JsonArray verificarOrdem(JsonArray array) {
     List<JsonElement> lista = new ArrayList<>();
     array.forEach(lista::add);
 
@@ -50,7 +50,7 @@ private static JsonArray verificarOrdem(JsonArray array) {
         String dataA = a.getAsJsonObject().get("data").getAsString();
         String dataB = b.getAsJsonObject().get("data").getAsString();
         // converte e compara
-        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         LocalDate ldA = LocalDate.parse(dataA, fmt);
         LocalDate ldB = LocalDate.parse(dataB, fmt);
         return ldA.compareTo(ldB);

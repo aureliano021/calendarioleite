@@ -16,6 +16,7 @@ public class UI {
         while (continua) {
 
             String existe = LeitorArquivo.verificarExiste();
+            criar(existe);
             if (existe != null) {
                 int resposta = Terminal.lerint("""
                         MENU\u001B[34m
