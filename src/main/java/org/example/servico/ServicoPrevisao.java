@@ -1,9 +1,8 @@
-package org.example.serviço;
+package org.example.servico;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonDeserializer;
-import jdk.jshell.execution.Util;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

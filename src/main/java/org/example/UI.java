@@ -1,16 +1,14 @@
 package org.example;
 
 import com.google.gson.*;
-import org.example.serviço.Previsao;
-import org.example.serviço.ServicoPrevisao;
+import org.example.servico.Previsao;
+import org.example.servico.ServicoPrevisao;
 
-import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 import static org.example.GravadorArquivo.criar;
 import static org.example.GeradorRelatorio.soma;
-import static org.example.LeitorArquivo.verificarExiste;
 
 public class UI {
     public static Previsao servico;

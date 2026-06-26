@@ -1,6 +1,5 @@
-package org.example.serviço;
+package org.example.servico;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
